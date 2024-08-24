@@ -8,8 +8,16 @@
 </head>
 
 <body>
-    <div id="header-placeholder"></div> <!-- Placeholder for the header -->
-    
+    <div id="header-placeholder"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
       <section id="blogs">
         <h2>Blogs</h2>
         <div class="post">
@@ -37,7 +45,5 @@
     <footer>
         <p>&copy; 2024 My Personal Space</p>
     </footer>
-
-    <script src="/assets/scripts.js"></script>
 </body>
 </html>
