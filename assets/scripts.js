@@ -19,4 +19,5 @@ function loadFooter() {
 
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
+    loadFooter();
 });
