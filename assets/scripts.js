@@ -9,6 +9,14 @@ function loadHeader() {
         });
 }
 
+function loadFooter() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
 });
