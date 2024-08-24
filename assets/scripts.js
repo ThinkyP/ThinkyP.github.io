@@ -1,22 +1,20 @@
-// This is a placeholder for your JavaScript. 
-// You can add interactivity here if needed, such as toggling sections, fetching posts dynamically, etc.
-
-function loadHeader() {
-    fetch('header.html')
+function loadHeader(headerPath = 'header.html') {
+    fetch(headerPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
         });
 }
 
-function loadFooter() {
-    fetch('footer.html')
+function loadFooter(footerPath = 'footer.html') {
+    fetch(footerPath)
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
         });
 }
 
+// Example usage: this script is called within the HTML files
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     loadFooter();
