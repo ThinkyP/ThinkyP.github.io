@@ -95,3 +95,7 @@ footer {
         margin: 5px 0;
     }
 }
+
+.scroll-content {
+    overflow-y: auto;
+}
