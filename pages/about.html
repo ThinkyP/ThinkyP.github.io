@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Minimalistic Website</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
@@ -15,9 +15,8 @@
 
     <script src="../assets/scripts.js"></script>
     <script>
-        // Ensure that the loadHeader and loadFooter functions are called
         document.addEventListener("DOMContentLoaded", function() {
-            loadHeader('../header.html');
+            loadHeader('../header.html'); // since subspace ../header and not /header
             loadFooter('../footer.html');
         });
     </script>

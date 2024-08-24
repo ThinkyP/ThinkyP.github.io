@@ -37,5 +37,12 @@
     <div id="footer-placeholder"></div>
 
     <script src="assets/scripts.js"></script>
+    <script>
+        // Ensure that the loadHeader and loadFooter functions are called
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHeader('header.html');
+            loadFooter('footer.html');
+        });
+    </script>
 </body>
 </html>
