@@ -13,9 +13,3 @@ function loadFooter(footerPath = 'footer.html') {
             document.getElementById('footer-placeholder').innerHTML = data;
         });
 }
-
-// Example usage: this script is called within the HTML files
-document.addEventListener("DOMContentLoaded", function() {
-    loadHeader();
-    loadFooter();
-});
