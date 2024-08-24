@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Minimalistic Website</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <p>Here will be text</p>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHeader('../header.html'); // since subspace ../header and not /header
+            loadFooter('../footer.html');
+        });
+    </script>
+
+</body>
+</html>
